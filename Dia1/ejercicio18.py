@@ -1,7 +1,12 @@
 numerosecreto=4
-numero=int(input("Intenta adivinar el numero "))
+while True:
+    try:
+        numero=int(input("Intenta adivinar el numero "))
 
-if numero==numerosecreto:
-    print("Adivinaste")
-else:
-    print("Fallaste")
+        if numero==numerosecreto:
+            print("Adivinaste")
+        else:
+            print("Fallaste")
+            break
+    except ValueError:
+        print("Ingrese un numero valido")

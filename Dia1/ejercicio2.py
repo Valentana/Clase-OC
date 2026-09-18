@@ -1,6 +1,11 @@
-numero=int(input ("pone un numero "))
+while True:
+    try:
+        numero=int(input ("pone un numero "))
 
-if numero%2==0:
-    print("Tu numero es par")
-else:
-    print(" Tu numero es impar")
+        if numero%2==0:
+            print("Tu numero es par")
+        else:
+            print(" Tu numero es impar")
+        break
+    except ValueError:
+        print("Ingrese un numero valido")
