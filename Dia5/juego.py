@@ -7,7 +7,6 @@ a=-1
 c=random.randint(0,15)
 boton= 21
 vel=1
-# Configuración del Pixel
 pixel_pin = board.D18
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(boton,GPIO.IN)
@@ -18,9 +17,6 @@ ORDER = neopixel.GRB # Orden de colores (A veces es RGB)
 pixels = neopixel.NeoPixel(
     pixel_pin, num_pixels, brightness=0.2, auto_write=False, pixel_order=ORDER
 )
-
-
-
 try:
     while True: 
             pixels[a]=(0,0,0)
